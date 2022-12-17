@@ -21,9 +21,7 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
 
-        this.isCheeseAdded = false;
-        this.isToppingsAdded = false;
-        this.isTakeAwayAdded = false;
+
         this.cheesePrice = 80;
         this.takeAwayPrice = 20;
 
@@ -35,6 +33,8 @@ public class Pizza {
             this.price = 400;
             this.toppingsPrice = 120;
         }
+
+        this.bill = "Base Price Of The Pizza: " + this.price + "\n";
 
         this.isCheeseAdded = false;
         this.isToppingsAdded = false;
